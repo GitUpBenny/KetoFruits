@@ -154,9 +154,11 @@
             {%- if block.settings.title -%}
               <p class="h4">{{ block.settings.title | escape }}</p>
             {%- endif -%}
+            
 
             {%- case block.type -%}
               {%- when 'newsletter' -%}
+                <p>{{ 'customizations.footer.newsletter' | t }}</p>
                 <div class="site-footer__newsletter
                           {% if section.blocks.size == 1 %} site-footer__single-block--centered{% endif %}">
                   {%- assign formId = 'ContactFooter' -%}
@@ -331,8 +333,8 @@
           </ul>
         {%- else -%}
           <div class="small--hide site-footer-item-align-right {% if show_selectors or show_payment_icons %}site-footer-item-center-vertically{% endif %}">
-            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-            <small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small>
+            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}. {{ shop.name | link_to: routes.root_url }}. {{ 'customizations.footer.rights' | t }}.</small>
+            {% comment %} <small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small> {% endcomment %}
           </div>
         {%- endif -%}
       </div>
@@ -345,14 +347,14 @@
 
       {%- if social_icons and show_selectors -%}
         <div class="grid__item small--hide site-footer-item-align-right {% if show_payment_icons %}one-half{% endif %}">
-          <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-          <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
+          <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}. {{ 'customizations.footer.rights' | t }}.</small>
+          {% comment %} <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small> {% endcomment %}
         </div>
       {%- endif -%}
 
       <div class="grid__item small--one-whole {{ copyright_show_class }} site-footer-item-align-right">
-        <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-        <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
+        <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}. {{ shop.name | link_to: routes.root_url }}. {{ 'customizations.footer.rights' | t }}.</small>
+        {% comment %} <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small> {% endcomment %}
       </div>
     </div>
   </div>

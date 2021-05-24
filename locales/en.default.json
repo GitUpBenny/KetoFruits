@@ -427,6 +427,10 @@
     },
     "reviews":{
       "heading": "See What Our Customers Have to Say"
+    },
+    "footer":{
+      "rights": "All Rights Reserved",
+      "newsletter": "Subscribe to our Newsletter to find out about the latest news on our Fruit Market:"
     }
   }
 }
