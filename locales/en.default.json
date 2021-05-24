@@ -420,5 +420,10 @@
       "add_to_apple_wallet": "Add to Apple Wallet",
       "qr_image_alt": "QR code — scan to redeem gift card"
     }
+  },
+  "customizations": {
+    "faq": {
+      "heading": "Frequently Asked Questions (FAQ)"
+    }
   }
 }
