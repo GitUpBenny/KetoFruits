@@ -424,6 +424,9 @@
   "customizations": {
     "faq": {
       "heading": "Frequently Asked Questions (FAQ)"
+    },
+    "reviews":{
+      "heading": "See What Our Customers Have to Say"
     }
   }
 }

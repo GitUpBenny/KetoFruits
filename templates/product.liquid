@@ -4,6 +4,12 @@
 
 {% section 'product-template' %}
 {% section 'product-recommendations' %}
+<div class="product-template__container page-width">
+  <div class="section-header text-center" style="margin-top: 60px;">
+    <h2>{{ 'customizations.reviews.heading' | t }}</h2>
+  </div>
+  {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: false, product: product %}
+</div>
 
 <div id="backToCollection"></div>
 
